@@ -85,6 +85,9 @@ class Records extends Component {
   balance(){
     return this.credits()+this.debits();
   }
+
+
+
   render() {
     const { error, isLoaded, records } = this.state;
     let recordsComponent;
@@ -98,7 +101,7 @@ class Records extends Component {
         <table className="table table-bordered">
           <thead>
             <tr>
-              <th>Date</th>
+              <th>Dates</th>
               <th>Title</th>
               <th>Amount</th>
               <th>Actions</th>
@@ -131,6 +134,10 @@ class Records extends Component {
       </div>
     );
   }
+
+
+
+
 }
 
 export default Records;
